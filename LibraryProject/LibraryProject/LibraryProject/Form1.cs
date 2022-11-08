@@ -58,6 +58,9 @@ namespace LibraryProject
             this.Close();
         }
 
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

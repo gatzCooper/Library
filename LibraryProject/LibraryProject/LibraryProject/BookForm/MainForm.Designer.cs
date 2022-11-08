@@ -32,14 +32,14 @@
             this.btn_AddB = new System.Windows.Forms.Button();
             this.btn_SearchB = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.mColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -47,9 +47,10 @@
             // 
             // btn_DeleteB
             // 
-            this.btn_DeleteB.Location = new System.Drawing.Point(138, 19);
+            this.btn_DeleteB.Location = new System.Drawing.Point(207, 29);
+            this.btn_DeleteB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_DeleteB.Name = "btn_DeleteB";
-            this.btn_DeleteB.Size = new System.Drawing.Size(50, 25);
+            this.btn_DeleteB.Size = new System.Drawing.Size(75, 38);
             this.btn_DeleteB.TabIndex = 11;
             this.btn_DeleteB.Text = "Delete";
             this.btn_DeleteB.UseVisualStyleBackColor = true;
@@ -57,9 +58,10 @@
             // 
             // btn_AddB
             // 
-            this.btn_AddB.Location = new System.Drawing.Point(26, 19);
+            this.btn_AddB.Location = new System.Drawing.Point(39, 29);
+            this.btn_AddB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_AddB.Name = "btn_AddB";
-            this.btn_AddB.Size = new System.Drawing.Size(50, 25);
+            this.btn_AddB.Size = new System.Drawing.Size(75, 38);
             this.btn_AddB.TabIndex = 10;
             this.btn_AddB.Text = "Add";
             this.btn_AddB.UseVisualStyleBackColor = true;
@@ -67,9 +69,10 @@
             // 
             // btn_SearchB
             // 
-            this.btn_SearchB.Location = new System.Drawing.Point(82, 19);
+            this.btn_SearchB.Location = new System.Drawing.Point(123, 29);
+            this.btn_SearchB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_SearchB.Name = "btn_SearchB";
-            this.btn_SearchB.Size = new System.Drawing.Size(50, 25);
+            this.btn_SearchB.Size = new System.Drawing.Size(75, 38);
             this.btn_SearchB.TabIndex = 9;
             this.btn_SearchB.Text = "Search";
             this.btn_SearchB.UseVisualStyleBackColor = true;
@@ -87,54 +90,15 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewCheckBoxColumn1});
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView2.Location = new System.Drawing.Point(4, 24);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(922, 297);
+            this.dataGridView2.Size = new System.Drawing.Size(1384, 457);
             this.dataGridView2.TabIndex = 15;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellDoubleClick);
-            // 
-            // mColID
-            // 
-            this.mColID.DataPropertyName = "ID";
-            this.mColID.HeaderText = "شناسه";
-            this.mColID.Name = "mColID";
-            this.mColID.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "title";
-            this.dataGridViewTextBoxColumn1.HeaderText = "عنوان";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "author";
-            this.dataGridViewTextBoxColumn2.HeaderText = "نویسنده";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "publisher";
-            this.dataGridViewTextBoxColumn3.HeaderText = " انتشارات";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "translator";
-            this.dataGridViewTextBoxColumn4.HeaderText = "مترجم";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "available";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "موجود در قفسه";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -143,8 +107,10 @@
             this.groupBox1.Controls.Add(this.btn_DeleteB);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(928, 54);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(1392, 83);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
@@ -152,19 +118,69 @@
             // 
             this.groupBox2.Controls.Add(this.dataGridView2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 54);
+            this.groupBox2.Location = new System.Drawing.Point(0, 83);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(928, 316);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(1392, 486);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             // 
+            // mColID
+            // 
+            this.mColID.DataPropertyName = "ID";
+            this.mColID.HeaderText = "ID";
+            this.mColID.MinimumWidth = 8;
+            this.mColID.Name = "mColID";
+            this.mColID.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "title";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Title";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "author";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Author";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "publisher";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Publisher";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "translator";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Tranlator";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "available";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Available";
+            this.dataGridViewCheckBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            // 
             // Form7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 370);
+            this.ClientSize = new System.Drawing.Size(1392, 569);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form7";
             this.Text = "Books";
             this.Load += new System.EventHandler(this.Form7_Load);
@@ -181,13 +197,13 @@
         private System.Windows.Forms.Button btn_AddB;
         private System.Windows.Forms.Button btn_SearchB;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridViewTextBoxColumn mColID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

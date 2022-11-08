@@ -9,7 +9,7 @@ namespace LibraryProject.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(LibraryProject.BlogDbContext context)

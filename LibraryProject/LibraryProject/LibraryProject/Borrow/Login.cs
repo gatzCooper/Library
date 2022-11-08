@@ -26,12 +26,12 @@ namespace LibraryProject.Borrow
                 MembersTbl memberList = mc.MembersTbls.Where(x => x.ID == ID).FirstOrDefault();
                 if (memberList == null)
                 {
-                    txt_message.Text = "شناسه کاربری نامعتبر است";
+                    txt_message.Text = "User not found";
                     return;
                 }
                 else if( memberList.ExpiryDate < DateTime.Now)
                 {
-                    txt_message.Text = "تاریخ عضوبت شما به اتمام رسیده";
+                    txt_message.Text = "Memebership already expired!";
                 }
                 else
                 {
